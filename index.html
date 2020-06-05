@@ -21,7 +21,28 @@
 </head>
 
 <body>
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <span class="navbar-brand">DJHCP</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Files
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <button class="btnLoadExtracted  dropdown-item">Load Extracted files</button>
+            <button class="btnAdd  dropdown-item" disabled>Add Custom</button>
+            <button class="btnUpdate  dropdown-item" disabled>Update</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="modal fade" id="modalAPINotFound" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -67,17 +88,17 @@
       <input id="inputSearch" class="form-control" type="search" placeholder="Search" aria-label="Search" />
     </div>
     <div class="btn-group w-25" role="group" aria-label="Basic example">
-      <button id="btnLoadExtracted" type="button" class="btn btn-primary btn-lg">
+      <button type="button" class="btnLoadExtracted  btn btn-primary btn-lg">
         Load Extracted Files
       </button>
     </div>
     <div class="btn-group w-50" role="group" aria-label="Basic example">
-      <button id="btnAdd" type="button" class="btn btn-secondary btn-lg" disabled>
+      <button type="button" class="btnAdd  btn btn-secondary btn-lg" disabled>
         Add Custom
       </button>
     </div>
     <div class="btn-group w-25" role="group" aria-label="Basic example">
-      <button id="btnUpdate" type="button" class="btn btn-secondary btn-lg" disabled>Update</button>
+      <button type="button" class="btnUpdate  btn btn-secondary btn-lg" disabled>Update</button>
     </div>
   </div>
 

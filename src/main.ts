@@ -5,6 +5,7 @@ let visible: Element[] = []
 let trackObjs: strObj[] = []
 let selectedIndex = 0
 let baseFolderHandle
+let modified = false
 
 interface strObj {
 	id: string,
@@ -13,7 +14,7 @@ interface strObj {
 
 function checkAPIAvailable(){
 	if(window.chooseFileSystemEntries == undefined){
-		$("#exampleModalCenter").modal("show")
+		$("#modalAPINotFound").modal("show")
 		console.log("API NOT found")
 	}
 	else{
@@ -137,7 +138,7 @@ function filterTracks(query: string):Promise<Element[]> {
 	})
 }
 
-$("#btnLoadExtracted").bind("click", async () => {
+$(".btnLoadExtracted").bind("click", async () => {
 	const opts = { type: 'open-directory' };
 	baseFolderHandle = await window.chooseFileSystemEntries(opts);
 	const dirAudiotracks = await (await baseFolderHandle.getDirectory("AUDIO")).getDirectory("Audiotracks")
@@ -175,16 +176,17 @@ $("#btnLoadExtracted").bind("click", async () => {
 	visible = tracks
 
 	//enable buttons
-	$("#btnAdd").get(0).disabled = false
-	$("#btnUpdate").get(0).disabled = false
-	$("#btnLoadExtracted").get(0).classList.remove("btn-primary")
-	$("#btnLoadExtracted").get(0).classList.add("btn-secondary")
+	$(".btnAdd").removeAttr("disabled")
+	$(".btnUpdate").removeAttr("disabled")
+	$(".btnLoadExtracted").removeClass("btn-primary")
+	$(".btnLoadExtracted").addClass("btn-secondary")
 
+	modified = true
 	updateList()
 	hideLoading()
 })
 
-$("#btnAdd").bind("click", async ev =>{
+$(".btnAdd").bind("click", async ev =>{
 	//const opts = {accepts:[{description:"XML File",extensions:["xml"]}]}
 	const opts = {type:"open-directory"}
 	const handle = await window.chooseFileSystemEntries(opts);
@@ -250,10 +252,11 @@ $("#btnAdd").bind("click", async ev =>{
 			console.error("TRACKLISTING ERROR: a track with id", id, "is already present. Skipping")
 		}
 	}
+	modified = true
 	updateList()
 })
 
-$("#btnUpdate").bind("click", async ev => {
+$(".btnUpdate").bind("click", async ev => {
 	if (tracks.length > 0 && trackObjs.length > 0) {
 		const dirAudiotracks = await (await baseFolderHandle.getDirectory("AUDIO")).getDirectory("Audiotracks")
 		const dirTrac = await (await baseFolderHandle.getDirectory("Text")).getDirectory("TRAC")
@@ -286,6 +289,7 @@ $("#btnUpdate").bind("click", async ev => {
 		await idStream.close()
 		await valueStream.close()
 		await trackStream.close()
+		modified = false
 	}
 })
 
@@ -307,7 +311,7 @@ $("#inputSearch").bind("keyup", async ev => {
 	}
 })
 
-document.addEventListener("keyup", ev => {
+$(document).bind("keyup", ev => {
 	if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0) {
 		tbodyTracklisting.removeChild(tbodyTracklisting.children.item(selectedIndex))
 		if (selectedIndex >= tbodyTracklisting.children.length) selectedIndex = tbodyTracklisting.children.length - 1
@@ -316,9 +320,15 @@ document.addEventListener("keyup", ev => {
 	highlightActive()
 })
 
-window.addEventListener("resize", () => {
+$(window).bind("resize", () => {
 	let bottom = parseFloat(getComputedStyle($("#divToolbar").get(0)).height)
-	divTracklisting.style.height = (window.innerHeight - bottom - 10).toString() + "px"
+	let top = parseFloat(getComputedStyle($("#navbar").get(0)).height)
+
+	divTracklisting.style.height = (window.innerHeight - bottom - top).toString() + "px"
 })
+
+window.onbeforeunload = () => {
+	return modified ? "yes" : null;
+};
 
 window.dispatchEvent(new Event("resize"))

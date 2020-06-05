@@ -1,0 +1,338 @@
+{
+  "program": {
+    "fileInfos": {
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts": {
+        "version": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0",
+        "signature": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0"
+      },
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7",
+        "signature": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7"
+      },
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed",
+        "signature": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed"
+      },
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
+        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+      },
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
+        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+      },
+      "./src/main.ts": {
+        "version": "a56447ea3070097ec573b565b79a02e2dc12f19bcfbfc9daa7e6c5d839d61f0a",
+        "signature": "9cddc0f3b59faea0b190f58187b90018bc49e8e849638c4d9ce335bb263c8e89"
+      },
+      "./node_modules/@types/jquery/jquerystatic.d.ts": {
+        "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
+        "signature": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c"
+      },
+      "./node_modules/@types/jquery/jquery.d.ts": {
+        "version": "3ea0e1446b84ad60e76c41d5ab06d923b929043f885e28321520ed18aa70cddb",
+        "signature": "3ea0e1446b84ad60e76c41d5ab06d923b929043f885e28321520ed18aa70cddb"
+      },
+      "./node_modules/@types/jquery/misc.d.ts": {
+        "version": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc",
+        "signature": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc"
+      },
+      "./node_modules/@types/jquery/legacy.d.ts": {
+        "version": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
+        "signature": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc"
+      },
+      "./node_modules/@types/sizzle/index.d.ts": {
+        "version": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
+        "signature": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876"
+      },
+      "./node_modules/@types/jquery/index.d.ts": {
+        "version": "2f7f24e566d3029aa802876b4452ae7d8a4ae21a44cefe4767c3986e06b69fc4",
+        "signature": "2f7f24e566d3029aa802876b4452ae7d8a4ae21a44cefe4767c3986e06b69fc4"
+      },
+      "./node_modules/popper.js/index.d.ts": {
+        "version": "1873db8f2261ba4f248bde3e5bb4c79b1fdc990315054e9604fce8f41ddd1587",
+        "signature": "1873db8f2261ba4f248bde3e5bb4c79b1fdc990315054e9604fce8f41ddd1587"
+      },
+      "./node_modules/@types/bootstrap/index.d.ts": {
+        "version": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680",
+        "signature": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680"
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 1,
+      "module": 1,
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "watch": true,
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {
+      "./node_modules/@types/jquery/index.d.ts": [
+        "./node_modules/@types/jquery/jquerystatic.d.ts",
+        "./node_modules/@types/jquery/jquery.d.ts",
+        "./node_modules/@types/jquery/misc.d.ts",
+        "./node_modules/@types/jquery/legacy.d.ts",
+        "./node_modules/@types/sizzle/index.d.ts"
+      ],
+      "./node_modules/@types/bootstrap/index.d.ts": [
+        "./node_modules/popper.js/index.d.ts",
+        "./node_modules/@types/jquery/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "./node_modules/@types/jquery/index.d.ts": [
+        "./node_modules/@types/jquery/jquerystatic.d.ts",
+        "./node_modules/@types/jquery/jquery.d.ts",
+        "./node_modules/@types/jquery/misc.d.ts",
+        "./node_modules/@types/jquery/legacy.d.ts",
+        "./node_modules/@types/sizzle/index.d.ts"
+      ],
+      "./node_modules/@types/bootstrap/index.d.ts": [
+        "./node_modules/popper.js/index.d.ts",
+        "./node_modules/@types/jquery/index.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts",
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "./node_modules/@types/jquery/jquerystatic.d.ts",
+      "./node_modules/@types/jquery/jquery.d.ts",
+      "./node_modules/@types/jquery/misc.d.ts",
+      "./node_modules/@types/jquery/legacy.d.ts",
+      "./node_modules/@types/sizzle/index.d.ts",
+      "./node_modules/@types/jquery/index.d.ts",
+      "./node_modules/popper.js/index.d.ts",
+      "./node_modules/@types/bootstrap/index.d.ts",
+      [
+        "./src/main.ts",
+        [
+          {
+            "file": "./src/main.ts",
+            "start": 222,
+            "length": 16,
+            "messageText": "Variable 'baseFolderHandle' implicitly has type 'any' in some locations where its type cannot be determined.",
+            "category": 1,
+            "code": 7034
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 361,
+            "length": 23,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 1180,
+            "length": 5,
+            "messageText": "Type 'HTMLCollection' is not an array type or a string type.",
+            "category": 1,
+            "code": 2495
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 1362,
+            "length": 7,
+            "messageText": "'Promise' only refers to a type, but is being used as a value here. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
+            "category": 1,
+            "code": 2585
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 1370,
+            "length": 7,
+            "messageText": "Parameter 'resolve' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 2867,
+            "length": 7,
+            "messageText": "'Promise' only refers to a type, but is being used as a value here. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
+            "category": 1,
+            "code": 2585
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 2875,
+            "length": 8,
+            "messageText": "Parameter 'response' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 3005,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'includes' does not exist on type 'string'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 3139,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'from' does not exist on type 'ArrayConstructor'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 3211,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'from' does not exist on type 'ArrayConstructor'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 3792,
+            "length": 13,
+            "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
+            "category": 1,
+            "code": 2705
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 3883,
+            "length": 23,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 4940,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'from' does not exist on type 'ArrayConstructor'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 5278,
+            "length": 12,
+            "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
+            "category": 1,
+            "code": 2705
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 5433,
+            "length": 23,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 5940,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'includes' does not exist on type 'string'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 6649,
+            "length": 9,
+            "messageText": "Type 'HTMLCollection' is not an array type or a string type.",
+            "category": 1,
+            "code": 2495
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 7159,
+            "length": 13,
+            "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
+            "category": 1,
+            "code": 2705
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 7263,
+            "length": 16,
+            "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7005
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 7363,
+            "length": 16,
+            "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7005
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 8570,
+            "length": 13,
+            "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
+            "category": 1,
+            "code": 2705
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 8590,
+            "length": 16,
+            "messageText": "Object is possibly 'undefined'.",
+            "category": 1,
+            "code": 2532
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 8693,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'value' does not exist on type 'HTMLElement'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 8797,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'value' does not exist on type 'HTMLElement'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 8971,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'code' does not exist on type 'KeyUpEvent<Document, undefined, Document, Document>'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 9068,
+            "length": 46,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'Element | null' is not assignable to parameter of type 'Node'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'null' is not assignable to type 'Node'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    ]
+  },
+  "version": "3.8.3"
+}

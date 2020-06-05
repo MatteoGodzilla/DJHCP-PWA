@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,7 +35,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var _this = this;
 var divTracklisting = $("#divTracklisting").get(0);
 var tbodyTracklisting = $("#tableTracklisting").get(0);
 var tracks = [];
@@ -42,9 +42,10 @@ var visible = [];
 var trackObjs = [];
 var selectedIndex = 0;
 var baseFolderHandle;
+var modified = false;
 function checkAPIAvailable() {
     if (window.chooseFileSystemEntries == undefined) {
-        $("#exampleModalCenter").modal("show");
+        $("#modalAPINotFound").modal("show");
         console.log("API NOT found");
     }
     else {
@@ -161,7 +162,7 @@ function filterTracks(query) {
         response(visible);
     });
 }
-$("#btnLoadExtracted").bind("click", function () { return __awaiter(_this, void 0, void 0, function () {
+$(".btnLoadExtracted").bind("click", function () { return __awaiter(void 0, void 0, void 0, function () {
     var opts, dirAudiotracks, dirTrac, idFile, textFile, ids, textData, idArray, i, textArray, i, xmlFile, xml, xmlroot, elm;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -217,17 +218,18 @@ $("#btnLoadExtracted").bind("click", function () { return __awaiter(_this, void 
                 tracks = Array.from(elm.children[0].children);
                 visible = tracks;
                 //enable buttons
-                $("#btnAdd").get(0).disabled = false;
-                $("#btnUpdate").get(0).disabled = false;
-                $("#btnLoadExtracted").get(0).classList.remove("btn-primary");
-                $("#btnLoadExtracted").get(0).classList.add("btn-secondary");
+                $(".btnAdd").removeAttr("disabled");
+                $(".btnUpdate").removeAttr("disabled");
+                $(".btnLoadExtracted").removeClass("btn-primary");
+                $(".btnLoadExtracted").addClass("btn-secondary");
+                modified = true;
                 updateList();
                 hideLoading();
                 return [2 /*return*/];
         }
     });
 }); });
-$("#btnAdd").bind("click", function (ev) { return __awaiter(_this, void 0, void 0, function () {
+$(".btnAdd").bind("click", function (ev) { return __awaiter(void 0, void 0, void 0, function () {
     var opts, handle, xmlInfo, tracInfo, lines, i, xmlParser, newTracks, _i, newTracks_1, newTrack, present, id, _a, tracks_2, track;
     return __generator(this, function (_b) {
         switch (_b.label) {
@@ -301,12 +303,13 @@ $("#btnAdd").bind("click", function (ev) { return __awaiter(_this, void 0, void 
                         console.error("TRACKLISTING ERROR: a track with id", id, "is already present. Skipping");
                     }
                 }
+                modified = true;
                 updateList();
                 return [2 /*return*/];
         }
     });
 }); });
-$("#btnUpdate").bind("click", function (ev) { return __awaiter(_this, void 0, void 0, function () {
+$(".btnUpdate").bind("click", function (ev) { return __awaiter(void 0, void 0, void 0, function () {
     var dirAudiotracks, dirTrac, trackStream, idStream, valueStream, serializer, xmlDoc_1, combinedIds_1, combinedValues_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -367,12 +370,13 @@ $("#btnUpdate").bind("click", function (ev) { return __awaiter(_this, void 0, vo
                 return [4 /*yield*/, trackStream.close()];
             case 16:
                 _a.sent();
+                modified = false;
                 _a.label = 17;
             case 17: return [2 /*return*/];
         }
     });
 }); });
-$("#inputSearch").bind("keyup", function (ev) { return __awaiter(_this, void 0, void 0, function () {
+$("#inputSearch").bind("keyup", function (ev) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         if (ev.originalEvent.code === "Enter") {
             showLoading();
@@ -393,7 +397,7 @@ $("#inputSearch").bind("keyup", function (ev) { return __awaiter(_this, void 0, 
         return [2 /*return*/];
     });
 }); });
-document.addEventListener("keyup", function (ev) {
+$(document).bind("keyup", function (ev) {
     if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0) {
         tbodyTracklisting.removeChild(tbodyTracklisting.children.item(selectedIndex));
         if (selectedIndex >= tbodyTracklisting.children.length)
@@ -402,8 +406,12 @@ document.addEventListener("keyup", function (ev) {
     }
     highlightActive();
 });
-window.addEventListener("resize", function () {
+$(window).bind("resize", function () {
     var bottom = parseFloat(getComputedStyle($("#divToolbar").get(0)).height);
-    divTracklisting.style.height = (window.innerHeight - bottom - 10).toString() + "px";
+    var top = parseFloat(getComputedStyle($("#navbar").get(0)).height);
+    divTracklisting.style.height = (window.innerHeight - bottom - top).toString() + "px";
 });
+window.onbeforeunload = function () {
+    return modified ? "yes" : null;
+};
 window.dispatchEvent(new Event("resize"));
