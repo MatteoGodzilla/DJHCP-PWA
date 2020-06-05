@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>DJHCP</title>
+
+  <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="./src/darkly-theme.css" />
+  <link rel="stylesheet" href="./src/styles.css" />
+
+  <!-- Bootstrap scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Native File System API not found</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          DJHCP-PWA requires the experimental api "Native Fs" to be enabled on your browser.
+
+          To enable it, goto <code>chrome://flags/#native-file-system-api </code>and enable by clicking on the dropdown
+          on the right
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="divTracklisting">
+    <div class="spinner-border" role="status" id="divLoading">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <table class="table table-striped" id="tableTracklisting">
+      <tbody>
+        <tr>
+          <td>Please</td>
+          <td>load</td>
+          <td>extracted</td>
+          <td>files</td>
+          <td> &lt3 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="divToolbar" class="btn-toolbar fixed-bottom" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="w-100">
+      <input id="inputSearch" class="form-control" type="search" placeholder="Search" aria-label="Search" />
+    </div>
+    <div class="btn-group w-25" role="group" aria-label="Basic example">
+      <button id="btnLoadExtracted" type="button" class="btn btn-primary btn-lg">
+        Load Extracted Files
+      </button>
+    </div>
+    <div class="btn-group w-50" role="group" aria-label="Basic example">
+      <button id="btnAdd" type="button" class="btn btn-secondary btn-lg" disabled>
+        Add Custom
+      </button>
+    </div>
+    <div class="btn-group w-25" role="group" aria-label="Basic example">
+      <button id="btnUpdate" type="button" class="btn btn-secondary btn-lg" disabled>Update</button>
+    </div>
+  </div>
+
+
+  <script src="./src/main.js"></script>
+</body>
+
+</html>

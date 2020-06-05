@@ -1,0 +1,13 @@
+{
+  "name": "djhcp-pwa",
+  "version": "1.0.0",
+  "description": "Dj Hero Control Panel",
+  "main": "index.js",
+  "author": "MatteoGodzilla",
+  "license": "MIT",
+  "dependencies": {
+    "@types/bootstrap": "^4.5.0",
+    "@types/jquery": "^3.3.38",
+    "typescript": "^3.9.3"
+  }
+}
