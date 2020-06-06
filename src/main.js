@@ -43,7 +43,7 @@ var trackObjs = [];
 var selectedIndex = 0;
 var baseFolderHandle;
 var modified = false;
-function checkAPIAvailable() {
+function init() {
     if (window.chooseFileSystemEntries == undefined) {
         $("#modalAPINotFound").modal("show");
         console.log("API NOT found");
@@ -51,8 +51,21 @@ function checkAPIAvailable() {
     else {
         console.log("API found");
     }
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register("./sw.js")
+                .then(function (registration) {
+                console.log("Service Worker Registered", registration);
+            }).catch(function (error) {
+                console.error("Service Worker Error", error);
+            });
+        });
+    }
+    else {
+        console.log("NO SERVICE WORKER SUPPORT");
+    }
 }
-checkAPIAvailable();
+init();
 function showLoading() {
     $("#divLoading").get(0).style.display = "none";
     $("#divLoading").get(0).style.display = "block";
@@ -67,6 +80,15 @@ function onSelection(ev) {
             selectedIndex = i;
     }
     highlightActive();
+}
+function openTrack(ev) {
+    var serializer = new XMLSerializer;
+    $("#modalTextArea").attr("value", serializer.serializeToString(tracks[ev.currentTarget.rowIndex]));
+    $("#modalTextEdit").one("hide.bs.modal", function () {
+        var parser = new DOMParser();
+        console.log($("#modalTextArea").get(0));
+    });
+    $("#modalTextEdit").modal("show");
 }
 function highlightActive() {
     if (tbodyTracklisting.childElementCount > 0) {
@@ -108,6 +130,9 @@ function updateList() {
             });
             tr.addEventListener("click", function (ev) {
                 onSelection(ev);
+            });
+            $(tr).bind("dblclick", function (ev) {
+                openTrack(ev);
             });
             tr.appendChild(artist1);
             tr.appendChild(name1);

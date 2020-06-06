@@ -3,6 +3,15 @@ div{
     padding: 10px;
 }
 
+tr:hover{
+    outline: solid;
+    outline-color: var(--primary);
+}
+
+input{
+    width: 100%;
+}
+
 #divTracklisting{
     display: flex;
     overflow-y: auto;
@@ -16,9 +25,4 @@ div{
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-}
-
-tr:hover{
-    outline: solid;
-    outline-color: var(--primary);
 }

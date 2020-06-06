@@ -12,7 +12,7 @@ interface strObj {
 	value: string
 }
 
-function checkAPIAvailable(){
+function init(){
 	if(window.chooseFileSystemEntries == undefined){
 		$("#modalAPINotFound").modal("show")
 		console.log("API NOT found")
@@ -20,9 +20,22 @@ function checkAPIAvailable(){
 	else{
 		console.log("API found")
 	}
-}
 
-checkAPIAvailable()
+	if ('serviceWorker' in navigator) {
+		window.addEventListener('load',() => {
+			navigator.serviceWorker.register("./sw.js")
+			.then(registration =>{
+				console.log("Service Worker Registered",registration)
+			}).catch(error =>{
+				console.error("Service Worker Error",error)
+			})
+		})
+	}
+	else{
+		console.log("NO SERVICE WORKER SUPPORT")
+	}
+}
+init()
 
 function showLoading() {
 	$("#divLoading").get(0).style.display = "none"
@@ -39,6 +52,17 @@ function onSelection(ev: Event) {
 		if (tbodyTracklisting.children[i] == ev.currentTarget) selectedIndex = i
 	}
 	highlightActive()
+}
+
+function openTrack(ev:Event){
+	let serializer = new XMLSerializer
+	$("#modalTextArea").attr("value",serializer.serializeToString(tracks[ev.currentTarget.rowIndex]))
+	$("#modalTextEdit").one("hide.bs.modal",()=>{
+		let parser = new DOMParser()
+		console.log($("#modalTextArea").get(0))
+	})
+	$("#modalTextEdit").modal("show")
+
 }
 
 function highlightActive() {
@@ -86,6 +110,10 @@ function updateList() {
 
 			tr.addEventListener("click", ev => {
 				onSelection(ev)
+			})
+
+			$(tr).bind("dblclick",ev =>{
+				openTrack(ev)
 			})
 
 			tr.appendChild(artist1)
@@ -332,3 +360,4 @@ window.onbeforeunload = () => {
 };
 
 window.dispatchEvent(new Event("resize"))
+

@@ -22,8 +22,8 @@
         "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
       },
       "./src/main.ts": {
-        "version": "a56447ea3070097ec573b565b79a02e2dc12f19bcfbfc9daa7e6c5d839d61f0a",
-        "signature": "9cddc0f3b59faea0b190f58187b90018bc49e8e849638c4d9ce335bb263c8e89"
+        "version": "eee9ed452ba006cedc12dbe0547512e0198a6e07fc054202670233d301555460",
+        "signature": "0c97f425f2b145fbefc403e14baf395712096a3c0361386b8447ae3110682d09"
       },
       "./node_modules/@types/jquery/jquerystatic.d.ts": {
         "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
@@ -121,7 +121,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 361,
+            "start": 348,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -129,7 +129,23 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 1180,
+            "start": 1480,
+            "length": 16,
+            "messageText": "Object is possibly 'null'.",
+            "category": 1,
+            "code": 2531
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 1497,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'rowIndex' does not exist on type 'EventTarget'."
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 1852,
             "length": 5,
             "messageText": "Type 'HTMLCollection' is not an array type or a string type.",
             "category": 1,
@@ -137,7 +153,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 1362,
+            "start": 2034,
             "length": 7,
             "messageText": "'Promise' only refers to a type, but is being used as a value here. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
             "category": 1,
@@ -145,7 +161,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 1370,
+            "start": 2042,
             "length": 7,
             "messageText": "Parameter 'resolve' implicitly has an 'any' type.",
             "category": 1,
@@ -153,7 +169,26 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 2867,
+            "start": 3318,
+            "length": 2,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'DoubleClickEvent<HTMLTableRowElement, undefined, HTMLTableRowElement, HTMLTableRowElement>' is not assignable to parameter of type 'Event'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'DoubleClickEvent<HTMLTableRowElement, undefined, HTMLTableRowElement, HTMLTableRowElement>' is missing the following properties from type 'Event': cancelBubble, composed, defaultPrevented, isTrusted, and 8 more.",
+                  "category": 1,
+                  "code": 2740
+                }
+              ]
+            }
+          },
+          {
+            "file": "./src/main.ts",
+            "start": 3600,
             "length": 7,
             "messageText": "'Promise' only refers to a type, but is being used as a value here. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
             "category": 1,
@@ -161,7 +196,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 2875,
+            "start": 3608,
             "length": 8,
             "messageText": "Parameter 'response' implicitly has an 'any' type.",
             "category": 1,
@@ -169,7 +204,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 3005,
+            "start": 3738,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -177,7 +212,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 3139,
+            "start": 3872,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -185,7 +220,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 3211,
+            "start": 3944,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -193,7 +228,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 3792,
+            "start": 4525,
             "length": 13,
             "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
             "category": 1,
@@ -201,7 +236,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 3883,
+            "start": 4616,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -209,7 +244,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 4940,
+            "start": 5673,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -217,7 +252,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 5278,
+            "start": 6011,
             "length": 12,
             "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
             "category": 1,
@@ -225,7 +260,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 5433,
+            "start": 6166,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -233,7 +268,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 5940,
+            "start": 6673,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -241,7 +276,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 6649,
+            "start": 7382,
             "length": 9,
             "messageText": "Type 'HTMLCollection' is not an array type or a string type.",
             "category": 1,
@@ -249,7 +284,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 7159,
+            "start": 7892,
             "length": 13,
             "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
             "category": 1,
@@ -257,7 +292,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 7263,
+            "start": 7996,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -265,7 +300,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 7363,
+            "start": 8096,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -273,7 +308,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 8570,
+            "start": 9303,
             "length": 13,
             "messageText": "An async function or method in ES5/ES3 requires the 'Promise' constructor.  Make sure you have a declaration for the 'Promise' constructor or include 'ES2015' in your `--lib` option.",
             "category": 1,
@@ -281,7 +316,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 8590,
+            "start": 9323,
             "length": 16,
             "messageText": "Object is possibly 'undefined'.",
             "category": 1,
@@ -289,7 +324,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 8693,
+            "start": 9426,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -297,7 +332,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 8797,
+            "start": 9530,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -305,7 +340,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 8971,
+            "start": 9704,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -313,7 +348,7 @@
           },
           {
             "file": "./src/main.ts",
-            "start": 9068,
+            "start": 9801,
             "length": 46,
             "code": 2345,
             "category": 1,
