@@ -6,6 +6,7 @@ let trackObjs: strObj[] = []
 let selectedIndex = 0
 let baseFolderHandle
 let modified = false
+let modalVisible = false
 
 interface strObj {
 	id: string,
@@ -55,14 +56,23 @@ function onSelection(ev: Event) {
 }
 
 function openTrack(ev:Event){
-	let serializer = new XMLSerializer
-	$("#modalTextArea").attr("value",serializer.serializeToString(tracks[ev.currentTarget.rowIndex]))
+	let serializer = new XMLSerializer()
+	$("#modalTextArea").val(serializer.serializeToString(visible[ev.currentTarget.rowIndex]))
 	$("#modalTextEdit").one("hide.bs.modal",()=>{
-		let parser = new DOMParser()
-		console.log($("#modalTextArea").get(0))
+		const parser = new DOMParser()
+		const doc = parser.parseFromString($("#modalTextArea").val(),"text/xml")
+		const error = doc.children[0].getElementsByTagName("parsererror")
+		if(error.length === 0){
+			const edit = visible[ev.currentTarget.rowIndex]
+			tracks[tracks.indexOf(edit)] = doc.children[0]
+			visible[ev.currentTarget.rowIndex] = doc.children[0]
+		}else{
+			console.error("XML Edit Error: found a parsing error when tryig to modify track data")
+		}
+		modalVisible = false
 	})
 	$("#modalTextEdit").modal("show")
-
+	modalVisible = true
 }
 
 function highlightActive() {
@@ -286,6 +296,7 @@ $(".btnAdd").bind("click", async ev =>{
 
 $(".btnUpdate").bind("click", async ev => {
 	if (tracks.length > 0 && trackObjs.length > 0) {
+		showLoading()
 		const dirAudiotracks = await (await baseFolderHandle.getDirectory("AUDIO")).getDirectory("Audiotracks")
 		const dirTrac = await (await baseFolderHandle.getDirectory("Text")).getDirectory("TRAC")
 
@@ -318,11 +329,14 @@ $(".btnUpdate").bind("click", async ev => {
 		await valueStream.close()
 		await trackStream.close()
 		modified = false
+
+		hideLoading()
 	}
 })
 
 $("#inputSearch").bind("keyup", async ev => {
 	if (ev.originalEvent.code === "Enter") {
+		selectedIndex = 0
 		showLoading()
 		setTimeout(() => {
 			filterTracks(ev.target.value).then(list => visible = list)
@@ -330,6 +344,7 @@ $("#inputSearch").bind("keyup", async ev => {
 			hideLoading()
 		}, 1);
 	} else if (ev.target.value == "") {
+		selectedIndex = 0
 		showLoading()
 		setTimeout(() => {
 			visible = tracks
@@ -340,7 +355,7 @@ $("#inputSearch").bind("keyup", async ev => {
 })
 
 $(document).bind("keyup", ev => {
-	if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0) {
+	if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0 && !modalVisible) {
 		tbodyTracklisting.removeChild(tbodyTracklisting.children.item(selectedIndex))
 		if (selectedIndex >= tbodyTracklisting.children.length) selectedIndex = tbodyTracklisting.children.length - 1
 		highlightActive()

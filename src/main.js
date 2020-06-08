@@ -43,6 +43,7 @@ var trackObjs = [];
 var selectedIndex = 0;
 var baseFolderHandle;
 var modified = false;
+var modalVisible = false;
 function init() {
     if (window.chooseFileSystemEntries == undefined) {
         $("#modalAPINotFound").modal("show");
@@ -82,13 +83,24 @@ function onSelection(ev) {
     highlightActive();
 }
 function openTrack(ev) {
-    var serializer = new XMLSerializer;
-    $("#modalTextArea").attr("value", serializer.serializeToString(tracks[ev.currentTarget.rowIndex]));
+    var serializer = new XMLSerializer();
+    $("#modalTextArea").val(serializer.serializeToString(visible[ev.currentTarget.rowIndex]));
     $("#modalTextEdit").one("hide.bs.modal", function () {
         var parser = new DOMParser();
-        console.log($("#modalTextArea").get(0));
+        var doc = parser.parseFromString($("#modalTextArea").val(), "text/xml");
+        var error = doc.children[0].getElementsByTagName("parsererror");
+        if (error.length === 0) {
+            var edit = visible[ev.currentTarget.rowIndex];
+            tracks[tracks.indexOf(edit)] = doc.children[0];
+            visible[ev.currentTarget.rowIndex] = doc.children[0];
+        }
+        else {
+            console.error("XML Edit Error: found a parsing error when tryig to modify track data");
+        }
+        modalVisible = false;
     });
     $("#modalTextEdit").modal("show");
+    modalVisible = true;
 }
 function highlightActive() {
     if (tbodyTracklisting.childElementCount > 0) {
@@ -340,6 +352,7 @@ $(".btnUpdate").bind("click", function (ev) { return __awaiter(void 0, void 0, v
         switch (_a.label) {
             case 0:
                 if (!(tracks.length > 0 && trackObjs.length > 0)) return [3 /*break*/, 17];
+                showLoading();
                 return [4 /*yield*/, baseFolderHandle.getDirectory("AUDIO")];
             case 1: return [4 /*yield*/, (_a.sent()).getDirectory("Audiotracks")];
             case 2:
@@ -396,6 +409,7 @@ $(".btnUpdate").bind("click", function (ev) { return __awaiter(void 0, void 0, v
             case 16:
                 _a.sent();
                 modified = false;
+                hideLoading();
                 _a.label = 17;
             case 17: return [2 /*return*/];
         }
@@ -404,6 +418,7 @@ $(".btnUpdate").bind("click", function (ev) { return __awaiter(void 0, void 0, v
 $("#inputSearch").bind("keyup", function (ev) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         if (ev.originalEvent.code === "Enter") {
+            selectedIndex = 0;
             showLoading();
             setTimeout(function () {
                 filterTracks(ev.target.value).then(function (list) { return visible = list; });
@@ -412,6 +427,7 @@ $("#inputSearch").bind("keyup", function (ev) { return __awaiter(void 0, void 0,
             }, 1);
         }
         else if (ev.target.value == "") {
+            selectedIndex = 0;
             showLoading();
             setTimeout(function () {
                 visible = tracks;
@@ -423,7 +439,7 @@ $("#inputSearch").bind("keyup", function (ev) { return __awaiter(void 0, void 0,
     });
 }); });
 $(document).bind("keyup", function (ev) {
-    if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0) {
+    if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0 && !modalVisible) {
         tbodyTracklisting.removeChild(tbodyTracklisting.children.item(selectedIndex));
         if (selectedIndex >= tbodyTracklisting.children.length)
             selectedIndex = tbodyTracklisting.children.length - 1;

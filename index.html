@@ -25,14 +25,16 @@
 <body>
   <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-secondary">
     <span class="navbar-brand">DJHCP</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             Files
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,7 +44,8 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             Scripts
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -64,9 +67,9 @@
           </button>
         </div>
         <div class="modal-body">
-          DJHCP-PWA requires the experimental api "Native Fs" to be enabled on your browser.
-
-          To enable it, goto <code>chrome://flags/#native-file-system-api </code>and enable by clicking on the dropdown
+          DJHCP-PWA requires the experimental API "Native Fs" to be enabled on your browser. This API is only available currently
+          for Chrome/Chromium Browsers.
+          To enable it, goto <code >chrome://flags/#native-file-system-api </code>and enable by clicking on the dropdown
           on the right
 
         </div>
@@ -78,26 +81,24 @@
   </div>
 
   <div class="modal fade" id="modalTextEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Edit xml</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input id="modalTextArea" class="bg-dark text-light"></input>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Edit Track XML Data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <textarea id="modalTextArea" class="bg-dark text-light" rows="15"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
 
   <div id="divTracklisting">
     <div class="spinner-border" role="status" id="divLoading">

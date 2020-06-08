@@ -8,7 +8,11 @@ tr:hover{
     outline-color: var(--primary);
 }
 
-input{
+td{
+    text-align: center;
+}
+
+textarea{
     width: 100%;
 }
 
