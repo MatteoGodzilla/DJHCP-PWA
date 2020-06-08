@@ -1,107 +1,107 @@
 {
   "program": {
     "fileInfos": {
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": {
         "version": "c180f01a2aaac7d733001fa1db20f881dc83cf33096b674a1546ca26762e69da",
         "signature": "c180f01a2aaac7d733001fa1db20f881dc83cf33096b674a1546ca26762e69da"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
         "version": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7",
         "signature": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
         "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
         "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
         "version": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed",
         "signature": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
         "version": "8329c3401aa8708426c7760f14219170f69a2cb77e4519758cec6f5027270faf",
         "signature": "8329c3401aa8708426c7760f14219170f69a2cb77e4519758cec6f5027270faf"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
         "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
         "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
         "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
         "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
         "version": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6",
         "signature": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
         "version": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8",
         "signature": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
         "version": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122",
         "signature": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
         "version": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210",
         "signature": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
         "version": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca",
         "signature": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
         "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
         "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
         "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
         "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
         "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
         "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
       },
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
         "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
         "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
       },
-      "./src/scriptbase.ts": {
-        "version": "256a7bf02f6eeade6843c4cda1a1ea5708a1ab3e211384a68828d2c7957b097d",
-        "signature": "4117c7d9f22b8352bf3d270031001ed58c618bbb6067811ecfebcf468721dd40"
+      "./scriptbase.ts": {
+        "version": "3809bbc0adcaba2f8168f764e4b5426050f6821c333e619051927b128f6d5c30",
+        "signature": "84f1dc64af0c4840033b995b19340142ae9f15dbeee2103067c2e71446784fb6"
       },
-      "./src/main.ts": {
-        "version": "d6757e595b1e4696ee7aaf8c1ded5a5294a219aae4aa71c09ad0a01973d5cb26",
+      "./checkapi.ts": {
+        "version": "91d963b0bab0f577f1db7299c5a8033c91f163db32787f68933d9058d8cba81f",
+        "signature": "c20e06c1da50433b8c351f9abed7cf1e8b757515610dcbce9c6b6d69debd4860"
+      },
+      "./main.ts": {
+        "version": "05aca80fd3014f5c8e2b62903e3e85384c6efe967bb786aae10056328b24c1f5",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
-      "./src/test.ts": {
-        "version": "6aaf643a2cdd793f3592c01f2e82d21eb566854500e0774edb9fbc7c6eb3e3a3",
-        "signature": "3a70c52800c7bab66ee9467386659c3acf0afb7d2d6763cb37c10db14d6969b5"
-      },
-      "./node_modules/@types/jquery/jquerystatic.d.ts": {
+      "../node_modules/@types/jquery/jquerystatic.d.ts": {
         "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
         "signature": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c"
       },
-      "./node_modules/@types/jquery/jquery.d.ts": {
+      "../node_modules/@types/jquery/jquery.d.ts": {
         "version": "3ea0e1446b84ad60e76c41d5ab06d923b929043f885e28321520ed18aa70cddb",
         "signature": "3ea0e1446b84ad60e76c41d5ab06d923b929043f885e28321520ed18aa70cddb"
       },
-      "./node_modules/@types/jquery/misc.d.ts": {
+      "../node_modules/@types/jquery/misc.d.ts": {
         "version": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc",
         "signature": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc"
       },
-      "./node_modules/@types/jquery/legacy.d.ts": {
+      "../node_modules/@types/jquery/legacy.d.ts": {
         "version": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
         "signature": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc"
       },
-      "./node_modules/@types/sizzle/index.d.ts": {
+      "../node_modules/@types/sizzle/index.d.ts": {
         "version": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
         "signature": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876"
       },
-      "./node_modules/@types/jquery/index.d.ts": {
+      "../node_modules/@types/jquery/index.d.ts": {
         "version": "2f7f24e566d3029aa802876b4452ae7d8a4ae21a44cefe4767c3986e06b69fc4",
         "signature": "2f7f24e566d3029aa802876b4452ae7d8a4ae21a44cefe4767c3986e06b69fc4"
       },
-      "./node_modules/@types/bootstrap/index.d.ts": {
+      "../node_modules/@types/bootstrap/index.d.ts": {
         "version": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680",
         "signature": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680"
       }
@@ -111,107 +111,126 @@
       "target": 2,
       "module": 5,
       "outDir": "./js",
-      "rootDir": "./src",
+      "rootDir": "./",
       "strict": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
       "watch": true,
-      "configFilePath": "./tsconfig.json"
+      "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
-      "./src/test.ts": [
-        "./src/scriptbase.ts"
+      "./checkapi.ts": [
+        "./scriptbase.ts"
       ],
-      "./node_modules/@types/jquery/index.d.ts": [
-        "./node_modules/@types/jquery/jquerystatic.d.ts",
-        "./node_modules/@types/jquery/jquery.d.ts",
-        "./node_modules/@types/jquery/misc.d.ts",
-        "./node_modules/@types/jquery/legacy.d.ts",
-        "./node_modules/@types/sizzle/index.d.ts"
+      "./main.ts": [
+        "./checkapi.ts"
       ],
-      "./node_modules/@types/bootstrap/index.d.ts": [
-        "./node_modules/@types/jquery/index.d.ts"
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ],
+      "../node_modules/@types/bootstrap/index.d.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
       ]
     },
     "exportedModulesMap": {
-      "./src/test.ts": [
-        "./src/scriptbase.ts"
+      "./checkapi.ts": [
+        "./scriptbase.ts"
       ],
-      "./node_modules/@types/jquery/index.d.ts": [
-        "./node_modules/@types/jquery/jquerystatic.d.ts",
-        "./node_modules/@types/jquery/jquery.d.ts",
-        "./node_modules/@types/jquery/misc.d.ts",
-        "./node_modules/@types/jquery/legacy.d.ts",
-        "./node_modules/@types/sizzle/index.d.ts"
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
       ],
-      "./node_modules/@types/bootstrap/index.d.ts": [
-        "./node_modules/@types/jquery/index.d.ts"
+      "../node_modules/@types/bootstrap/index.d.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
-      "../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-      "./src/scriptbase.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "./scriptbase.ts",
       [
-        "./src/main.ts",
+        "./checkapi.ts",
         [
           {
-            "file": "./src/main.ts",
-            "start": 17,
-            "length": 2,
-            "messageText": "Cannot find module ''.",
+            "file": "./checkapi.ts",
+            "start": 545,
+            "length": 23,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
+          }
+        ]
+      ],
+      "../node_modules/@types/jquery/jquerystatic.d.ts",
+      "../node_modules/@types/jquery/jquery.d.ts",
+      "../node_modules/@types/jquery/misc.d.ts",
+      "../node_modules/@types/jquery/legacy.d.ts",
+      "../node_modules/@types/sizzle/index.d.ts",
+      "../node_modules/@types/jquery/index.d.ts",
+      [
+        "../node_modules/@types/bootstrap/index.d.ts",
+        [
+          {
+            "file": "../node_modules/@types/bootstrap/index.d.ts",
+            "start": 398,
+            "length": 11,
+            "messageText": "Cannot find module 'popper.js'.",
             "category": 1,
             "code": 2307
-          },
+          }
+        ]
+      ],
+      [
+        "./main.ts",
+        [
           {
-            "file": "./src/main.ts",
-            "start": 245,
+            "file": "./main.ts",
+            "start": 267,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has type 'any' in some locations where its type cannot be determined.",
             "category": 1,
             "code": 7034
           },
           {
-            "file": "./src/main.ts",
-            "start": 421,
-            "length": 23,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
-          },
-          {
-            "file": "./src/main.ts",
-            "start": 1547,
+            "file": "./main.ts",
+            "start": 1449,
             "length": 16,
             "messageText": "Object is possibly 'null'.",
             "category": 1,
             "code": 2531
           },
           {
-            "file": "./src/main.ts",
-            "start": 1564,
+            "file": "./main.ts",
+            "start": 1466,
             "length": 8,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'rowIndex' does not exist on type 'EventTarget'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 1696,
+            "file": "./main.ts",
+            "start": 1601,
             "length": 25,
             "code": 2345,
             "category": 1,
@@ -229,15 +248,15 @@
             }
           },
           {
-            "file": "./src/main.ts",
-            "start": 1855,
-            "length": 16,
-            "messageText": "Object is possibly 'null'.",
+            "file": "./main.ts",
+            "start": 1781,
+            "length": 8,
+            "code": 2339,
             "category": 1,
-            "code": 2531
+            "messageText": "Property 'rowIndex' does not exist on type 'EventTarget'."
           },
           {
-            "file": "./src/main.ts",
+            "file": "./main.ts",
             "start": 1872,
             "length": 8,
             "code": 2339,
@@ -245,24 +264,8 @@
             "messageText": "Property 'rowIndex' does not exist on type 'EventTarget'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 1945,
-            "length": 16,
-            "messageText": "Object is possibly 'null'.",
-            "category": 1,
-            "code": 2531
-          },
-          {
-            "file": "./src/main.ts",
-            "start": 1962,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'rowIndex' does not exist on type 'EventTarget'."
-          },
-          {
-            "file": "./src/main.ts",
-            "start": 3826,
+            "file": "./main.ts",
+            "start": 3740,
             "length": 2,
             "code": 2345,
             "category": 1,
@@ -280,72 +283,72 @@
             }
           },
           {
-            "file": "./src/main.ts",
-            "start": 5124,
+            "file": "./main.ts",
+            "start": 5039,
             "length": 23,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 6674,
+            "file": "./main.ts",
+            "start": 6593,
             "length": 23,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 8521,
+            "file": "./main.ts",
+            "start": 8470,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
             "code": 7005
           },
           {
-            "file": "./src/main.ts",
-            "start": 8621,
+            "file": "./main.ts",
+            "start": 8570,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
             "code": 7005
           },
           {
-            "file": "./src/main.ts",
-            "start": 9867,
+            "file": "./main.ts",
+            "start": 9819,
             "length": 16,
             "messageText": "Object is possibly 'undefined'.",
             "category": 1,
             "code": 2532
           },
           {
-            "file": "./src/main.ts",
-            "start": 9991,
+            "file": "./main.ts",
+            "start": 9943,
             "length": 5,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'value' does not exist on type 'HTMLElement'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 10095,
+            "file": "./main.ts",
+            "start": 10047,
             "length": 5,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'value' does not exist on type 'HTMLElement'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 10290,
+            "file": "./main.ts",
+            "start": 10242,
             "length": 4,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'code' does not exist on type 'KeyUpEvent<Document, undefined, Document, Document>'."
           },
           {
-            "file": "./src/main.ts",
-            "start": 10404,
+            "file": "./main.ts",
+            "start": 10356,
             "length": 46,
             "code": 2345,
             "category": 1,
@@ -361,26 +364,6 @@
                 }
               ]
             }
-          }
-        ]
-      ],
-      "./src/test.ts",
-      "./node_modules/@types/jquery/jquerystatic.d.ts",
-      "./node_modules/@types/jquery/jquery.d.ts",
-      "./node_modules/@types/jquery/misc.d.ts",
-      "./node_modules/@types/jquery/legacy.d.ts",
-      "./node_modules/@types/sizzle/index.d.ts",
-      "./node_modules/@types/jquery/index.d.ts",
-      [
-        "./node_modules/@types/bootstrap/index.d.ts",
-        [
-          {
-            "file": "./node_modules/@types/bootstrap/index.d.ts",
-            "start": 398,
-            "length": 11,
-            "messageText": "Cannot find module 'popper.js'.",
-            "category": 1,
-            "code": 2307
           }
         ]
       ]

@@ -1,3 +1,5 @@
+import { CheckAPI } from "./CheckAPI.js";
+
 let divTracklisting = $("#divTracklisting").get(0)
 let tbodyTracklisting = $("#tableTracklisting").get(0)
 let tracks: Element[] = []
@@ -13,26 +15,20 @@ interface strObj {
 	value: string
 }
 
-function init(){
-	if(window.chooseFileSystemEntries == undefined){
-		$("#modalAPINotFound").modal("show")
-		console.log("API NOT found")
-	}
-	else{
-		console.log("API found")
-	}
+function init() {
+	new CheckAPI(<HTMLDivElement>$("#modalScript").get(0))
 
 	if ('serviceWorker' in navigator) {
-		window.addEventListener('load',() => {
+		window.addEventListener('load', () => {
 			navigator.serviceWorker.register("./sw.js")
-			.then(registration =>{
-				console.log("Service Worker Registered",registration)
-			}).catch(error =>{
-				console.error("Service Worker Error",error)
-			})
+				.then(registration => {
+					console.log("Service Worker Registered", registration)
+				}).catch(error => {
+					console.error("Service Worker Error", error)
+				})
 		})
 	}
-	else{
+	else {
 		console.log("NO SERVICE WORKER SUPPORT")
 	}
 }
@@ -55,18 +51,18 @@ function onSelection(ev: Event) {
 	highlightActive()
 }
 
-function openTrack(ev:Event){
+function openTrack(ev: Event) {
 	let serializer = new XMLSerializer()
 	$("#modalTextArea").val(serializer.serializeToString(visible[ev.currentTarget.rowIndex]))
-	$("#modalTextEdit").one("hide.bs.modal",()=>{
+	$("#modalTextEdit").one("hide.bs.modal", () => {
 		const parser = new DOMParser()
-		const doc = parser.parseFromString($("#modalTextArea").val(),"text/xml")
+		const doc = parser.parseFromString($("#modalTextArea").val(), "text/xml")
 		const error = doc.children[0].getElementsByTagName("parsererror")
-		if(error.length === 0){
-			const edit = visible[ev.currentTarget.rowIndex]
+		if (error.length === 0) {
+			const edit = visible[ev.currentTarget?.rowIndex]
 			tracks[tracks.indexOf(edit)] = doc.children[0]
-			visible[ev.currentTarget.rowIndex] = doc.children[0]
-		}else{
+			visible[ev.currentTarget?.rowIndex] = doc.children[0]
+		} else {
 			console.error("XML Edit Error: found a parsing error when tryig to modify track data")
 		}
 		modalVisible = false
@@ -122,7 +118,7 @@ function updateList() {
 				onSelection(ev)
 			})
 
-			$(tr).bind("dblclick",ev =>{
+			$(tr).bind("dblclick", ev => {
 				openTrack(ev)
 			})
 
@@ -137,7 +133,7 @@ function updateList() {
 	})
 }
 
-function filterTracks(query: string):Promise<Element[]> {
+function filterTracks(query: string): Promise<Element[]> {
 	return new Promise(response => {
 		visible = []
 		let includedStrings: strObj[] = []
@@ -224,13 +220,13 @@ $(".btnLoadExtracted").bind("click", async () => {
 	hideLoading()
 })
 
-$(".btnAdd").bind("click", async ev =>{
+$(".btnAdd").bind("click", async ev => {
 	//const opts = {accepts:[{description:"XML File",extensions:["xml"]}]}
-	const opts = {type:"open-directory"}
+	const opts = { type: "open-directory" }
 	const handle = await window.chooseFileSystemEntries(opts);
 
-	const xmlInfo:string = await (await (await handle.getFile("Info For Tracklisting.xml")).getFile()).text()
-	const tracInfo:string = await (await (await handle.getFile("Info For TRAC.csv")).getFile()).text()
+	const xmlInfo: string = await (await (await handle.getFile("Info For Tracklisting.xml")).getFile()).text()
+	const tracInfo: string = await (await (await handle.getFile("Info For TRAC.csv")).getFile()).text()
 
 	//trac strings
 	let lines = tracInfo.split("\n")
@@ -241,28 +237,28 @@ $(".btnAdd").bind("click", async ev =>{
 	}
 
 	//filters out comments and empty lines
-	lines = lines.filter(line =>{
+	lines = lines.filter(line => {
 		return !line.includes("//") && line.length > 0
 	})
 
-	lines.forEach(line =>{
+	lines.forEach(line => {
 		const tokens = line.split(",")
-		if(tokens.length > 1){
+		if (tokens.length > 1) {
 			//split between id and value
 			const id = tokens[0]
 			const value = tokens[1]
 
 			//check if string id already exists
 			let present = false
-			for(let obj of trackObjs){
-				if(obj.id === id){
+			for (let obj of trackObjs) {
+				if (obj.id === id) {
 					present = true
 					break
 				}
 			}
-			if(!present){
-				trackObjs.push({id:id,value:value})
-			}else{
+			if (!present) {
+				trackObjs.push({ id: id, value: value })
+			} else {
 				console.error("STRING ERROR: a string with id", id, "is already present. Skipping")
 			}
 		}
@@ -271,22 +267,22 @@ $(".btnAdd").bind("click", async ev =>{
 
 	//xml
 	let xmlParser = new DOMParser()
-	let newTracks = xmlParser.parseFromString(xmlInfo,"text/xml").children[0].children
+	let newTracks = xmlParser.parseFromString(xmlInfo, "text/xml").children[0].children
 
-	for(let newTrack of newTracks){
+	for (let newTrack of newTracks) {
 		let present = false
 		let id = newTrack.getElementsByTagName("IDTag")[0].innerHTML
 
 		//checks if newTrack is already added before
-		for(let track of tracks){
-			if(id === track.getElementsByTagName("IDTag")[0].innerHTML){
+		for (let track of tracks) {
+			if (id === track.getElementsByTagName("IDTag")[0].innerHTML) {
 				present = true
 				break
 			}
 		}
-		if(!present){
+		if (!present) {
 			tracks.push(newTrack)
-		}else{
+		} else {
 			console.error("TRACKLISTING ERROR: a track with id", id, "is already present. Skipping")
 		}
 	}
@@ -315,8 +311,8 @@ $(".btnUpdate").bind("click", async ev => {
 		//convert track objects to combined strings
 		let combinedIds = ""
 		let combinedValues = ""
-		trackObjs.forEach(obj =>{
-			if(obj.id !== "" && obj.value !== ""){
+		trackObjs.forEach(obj => {
+			if (obj.id !== "" && obj.value !== "") {
 				combinedIds += obj.id + "\n"
 				combinedValues += obj.value + "\0"
 			}

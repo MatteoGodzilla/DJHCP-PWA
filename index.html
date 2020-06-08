@@ -24,6 +24,7 @@
 
 <body>
   <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-secondary">
+    <img src="./src/icons/icon-512x512.png" class="mr-2" alt="Logo" width="50" height="50">
     <span class="navbar-brand">DJHCP</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,30 +57,6 @@
     </div>
   </nav>
 
-  <div class="modal fade" id="modalAPINotFound" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Native File System API not found</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          DJHCP-PWA requires the experimental API "Native Fs" to be enabled on your browser. This API is only available currently
-          for Chrome/Chromium Browsers.
-          To enable it, goto <code >chrome://flags/#native-file-system-api </code>and enable by clicking on the dropdown
-          on the right
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="modal fade" id="modalTextEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -92,6 +69,25 @@
         </div>
         <div class="modal-body">
           <textarea id="modalTextArea" class="bg-dark text-light" rows="15"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalScript" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title modalScriptTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body modalScriptBody">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -137,7 +133,7 @@
   </div>
 
 
-  <script src="./src/main.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
 
 </body>
 
