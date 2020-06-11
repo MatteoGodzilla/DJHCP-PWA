@@ -1,4 +1,5 @@
-import { CheckAPI } from "./CheckAPI.js";
+import CheckAPI from "./CheckAPI.js";
+import TrackListGenerator from "./TrackListGenerator.js";
 
 let divTracklisting = $("#divTracklisting").get(0)
 let tbodyTracklisting = $("#tableTracklisting").get(0)
@@ -17,7 +18,6 @@ interface strObj {
 
 function init() {
 	new CheckAPI(<HTMLDivElement>$("#modalScript").get(0))
-
 	if ('serviceWorker' in navigator) {
 		window.addEventListener('load', () => {
 			navigator.serviceWorker.register("./sw.js")
@@ -221,7 +221,6 @@ $(".btnLoadExtracted").bind("click", async () => {
 })
 
 $(".btnAdd").bind("click", async ev => {
-	//const opts = {accepts:[{description:"XML File",extensions:["xml"]}]}
 	const opts = { type: "open-directory" }
 	const handle = await window.chooseFileSystemEntries(opts);
 
@@ -350,6 +349,10 @@ $("#inputSearch").bind("keyup", async ev => {
 	}
 })
 
+$(".btnTrackGen").bind("click", ev => {
+	new TrackListGenerator(<HTMLDivElement>$("#modalScript").get(0))
+})
+
 $(document).bind("keyup", ev => {
 	if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0 && !modalVisible) {
 		tbodyTracklisting.removeChild(tbodyTracklisting.children.item(selectedIndex))
@@ -371,4 +374,3 @@ window.onbeforeunload = () => {
 };
 
 window.dispatchEvent(new Event("resize"))
-

@@ -66,15 +66,19 @@
         "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
       },
       "./scriptbase.ts": {
-        "version": "3809bbc0adcaba2f8168f764e4b5426050f6821c333e619051927b128f6d5c30",
-        "signature": "84f1dc64af0c4840033b995b19340142ae9f15dbeee2103067c2e71446784fb6"
+        "version": "c93bfae0a4cfcf6d2621c6dd24ab55e54242f09c5bfae56378385d83436a7ca3",
+        "signature": "3a5bdc3c488f423df08be69ae92a98e9cca2b82a379ef8e1198074fe95e516fa"
       },
       "./checkapi.ts": {
-        "version": "91d963b0bab0f577f1db7299c5a8033c91f163db32787f68933d9058d8cba81f",
-        "signature": "c20e06c1da50433b8c351f9abed7cf1e8b757515610dcbce9c6b6d69debd4860"
+        "version": "4af325829760f396da9bca9f8a78bb9a4d14f4840355faa8a69c3a4f375292fc",
+        "signature": "44b4237464ab42e0d4a86ce422e9d4f25504060ba783679ce686796895165cf0"
+      },
+      "./tracklistgenerator.ts": {
+        "version": "0e6f9a596358fb7b334c8b783c55ccc6ba139afdf9514b06ebb5366f13948587",
+        "signature": "9587363ccf594c994af627181575d3d677a898f2ec51a321573e744c030c4985"
       },
       "./main.ts": {
-        "version": "05aca80fd3014f5c8e2b62903e3e85384c6efe967bb786aae10056328b24c1f5",
+        "version": "620a78b7b73e28efe84528db87597dc7592f9a653653ec0961f564331a3ccc61",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "../node_modules/@types/jquery/jquerystatic.d.ts": {
@@ -122,8 +126,12 @@
       "./checkapi.ts": [
         "./scriptbase.ts"
       ],
+      "./tracklistgenerator.ts": [
+        "./scriptbase.ts"
+      ],
       "./main.ts": [
-        "./checkapi.ts"
+        "./checkapi.ts",
+        "./tracklistgenerator.ts"
       ],
       "../node_modules/@types/jquery/index.d.ts": [
         "../node_modules/@types/jquery/jquerystatic.d.ts",
@@ -138,6 +146,9 @@
     },
     "exportedModulesMap": {
       "./checkapi.ts": [
+        "./scriptbase.ts"
+      ],
+      "./tracklistgenerator.ts": [
         "./scriptbase.ts"
       ],
       "../node_modules/@types/jquery/index.d.ts": [
@@ -174,11 +185,24 @@
         [
           {
             "file": "./checkapi.ts",
-            "start": 545,
+            "start": 534,
             "length": 23,
             "code": 2339,
             "category": 1,
             "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
+          }
+        ]
+      ],
+      [
+        "./tracklistgenerator.ts",
+        [
+          {
+            "file": "./tracklistgenerator.ts",
+            "start": 951,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'includes' does not exist on type 'string[]'."
           }
         ]
       ],
@@ -206,7 +230,7 @@
         [
           {
             "file": "./main.ts",
-            "start": 267,
+            "start": 322,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has type 'any' in some locations where its type cannot be determined.",
             "category": 1,
@@ -214,7 +238,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1449,
+            "start": 1502,
             "length": 16,
             "messageText": "Object is possibly 'null'.",
             "category": 1,
@@ -222,7 +246,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1466,
+            "start": 1519,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -230,7 +254,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1601,
+            "start": 1654,
             "length": 25,
             "code": 2345,
             "category": 1,
@@ -249,7 +273,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1781,
+            "start": 1834,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -257,7 +281,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1872,
+            "start": 1925,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -265,7 +289,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 3740,
+            "start": 3793,
             "length": 2,
             "code": 2345,
             "category": 1,
@@ -284,7 +308,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 5039,
+            "start": 5092,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -292,7 +316,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 6593,
+            "start": 6573,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -300,7 +324,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 8470,
+            "start": 8450,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -308,7 +332,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 8570,
+            "start": 8550,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -316,7 +340,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 9819,
+            "start": 9799,
             "length": 16,
             "messageText": "Object is possibly 'undefined'.",
             "category": 1,
@@ -324,7 +348,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 9943,
+            "start": 9923,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -332,7 +356,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10047,
+            "start": 10027,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -340,7 +364,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10242,
+            "start": 10336,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -348,7 +372,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10356,
+            "start": 10450,
             "length": 46,
             "code": 2345,
             "category": 1,

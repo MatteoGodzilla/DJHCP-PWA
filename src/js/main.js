@@ -7,7 +7,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { CheckAPI } from "./CheckAPI.js";
+import CheckAPI from "./CheckAPI.js";
+import TrackListGenerator from "./TrackListGenerator.js";
 let divTracklisting = $("#divTracklisting").get(0);
 let tbodyTracklisting = $("#tableTracklisting").get(0);
 let tracks = [];
@@ -198,7 +199,6 @@ $(".btnLoadExtracted").bind("click", () => __awaiter(void 0, void 0, void 0, fun
     hideLoading();
 }));
 $(".btnAdd").bind("click", (ev) => __awaiter(void 0, void 0, void 0, function* () {
-    //const opts = {accepts:[{description:"XML File",extensions:["xml"]}]}
     const opts = { type: "open-directory" };
     const handle = yield window.chooseFileSystemEntries(opts);
     const xmlInfo = yield (yield (yield handle.getFile("Info For Tracklisting.xml")).getFile()).text();
@@ -312,6 +312,9 @@ $("#inputSearch").bind("keyup", (ev) => __awaiter(void 0, void 0, void 0, functi
         }, 1);
     }
 }));
+$(".btnTrackGen").bind("click", ev => {
+    new TrackListGenerator($("#modalScript").get(0));
+});
 $(document).bind("keyup", ev => {
     if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0 && !modalVisible) {
         tbodyTracklisting.removeChild(tbodyTracklisting.children.item(selectedIndex));

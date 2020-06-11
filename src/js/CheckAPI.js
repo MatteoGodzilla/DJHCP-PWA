@@ -1,5 +1,5 @@
-import { ScriptBase } from "./ScriptBase.js";
-export class CheckAPI extends ScriptBase {
+import ScriptBase from "./ScriptBase.js";
+class CheckAPI extends ScriptBase {
     constructor(div) {
         super(div);
         this.title.innerText = "Native File System API not found";
@@ -16,3 +16,4 @@ export class CheckAPI extends ScriptBase {
         }
     }
 }
+export default CheckAPI;
