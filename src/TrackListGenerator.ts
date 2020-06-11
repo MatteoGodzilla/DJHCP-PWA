@@ -75,8 +75,8 @@ class TrackListGenerator extends ScriptBase {
         let mixerHeadlineID = mixerPrefix + this.inputs[7].value.replace(" ", "_").toUpperCase()
 
         let multiplier = 1.0
-        if (Number(this.inputs[1].value) > 0 && Number(this.inputs[12].value) > 0) {
-            multiplier = Number(this.inputs[12].value) / Number(this.inputs[1].value)
+        if (Number(this.inputs[1].value) > 0 && Number(this.inputs[8].value) > 0) {
+            multiplier = Number(this.inputs[8].value) / Number(this.inputs[1].value)
         }
 
         //creating elements
@@ -96,7 +96,6 @@ class TrackListGenerator extends ScriptBase {
         let tapDiffNode = doc.createElement("TapComplexity")
         let crossDiffNode = doc.createElement("CrossfadeComplexity")
         let scratchDiffNode = doc.createElement("ScratchComplexity")
-        let deckSpeedNode = doc.createElement("DeckSpeedMultiplier")
 
         //setting up elements data
         IDnode.innerHTML = this.inputs[0].value
@@ -110,12 +109,10 @@ class TrackListGenerator extends ScriptBase {
         name2Node.innerHTML = name2ID !== namePrefix ? name2ID : ""
         mixDJNameNode.innerHTML = mixerDJID !== mixerPrefix ? mixerDJID : ""
         mixHeadlineNode.innerHTML = mixerHeadlineID !== mixerPrefix ? mixerHeadlineID : ""
-        trackDiffNode.innerHTML = this.inputs[8].value
-        tapDiffNode.innerHTML = this.inputs[9].value
-        crossDiffNode.innerHTML = this.inputs[10].value
-        scratchDiffNode.innerHTML = this.inputs[11].value
-        deckSpeedNode.setAttribute("Difficulty", "4")
-        deckSpeedNode.innerHTML = multiplier.toString()
+        trackDiffNode.innerHTML = this.inputs[9].value
+        tapDiffNode.innerHTML = this.inputs[10].value
+        crossDiffNode.innerHTML = this.inputs[11].value
+        scratchDiffNode.innerHTML = this.inputs[12].value
 
         //creating actual structure
         track.appendChild(IDnode)
@@ -124,7 +121,12 @@ class TrackListGenerator extends ScriptBase {
         track.appendChild(vocalNode)
         track.appendChild(BPMNode)
         track.appendChild(folderNode)
-        track.appendChild(deckSpeedNode)
+        for(let i = 0; i < 5; i++){
+            let deckSpeedNode = doc.createElement("DeckSpeedMultiplier")
+            deckSpeedNode.setAttribute("Difficulty", i.toString())
+            deckSpeedNode.innerHTML = multiplier.toString()
+            track.appendChild(deckSpeedNode)
+        }
         track.appendChild(trackDiffNode)
         track.appendChild(tapDiffNode)
         track.appendChild(crossDiffNode)

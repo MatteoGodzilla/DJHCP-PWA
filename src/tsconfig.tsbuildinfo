@@ -74,7 +74,7 @@
         "signature": "44b4237464ab42e0d4a86ce422e9d4f25504060ba783679ce686796895165cf0"
       },
       "./tracklistgenerator.ts": {
-        "version": "0e6f9a596358fb7b334c8b783c55ccc6ba139afdf9514b06ebb5366f13948587",
+        "version": "7b7e7719597b99db0fd3a4d15e4a8111a684c3f39ef58a55de890df066b7e7e4",
         "signature": "9587363ccf594c994af627181575d3d677a898f2ec51a321573e744c030c4985"
       },
       "./main.ts": {
@@ -190,38 +190,6 @@
             "code": 2339,
             "category": 1,
             "messageText": "Property 'chooseFileSystemEntries' does not exist on type 'Window & typeof globalThis'."
-          }
-        ]
-      ],
-      [
-        "./tracklistgenerator.ts",
-        [
-          {
-            "file": "./tracklistgenerator.ts",
-            "start": 951,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'includes' does not exist on type 'string[]'."
-          }
-        ]
-      ],
-      "../node_modules/@types/jquery/jquerystatic.d.ts",
-      "../node_modules/@types/jquery/jquery.d.ts",
-      "../node_modules/@types/jquery/misc.d.ts",
-      "../node_modules/@types/jquery/legacy.d.ts",
-      "../node_modules/@types/sizzle/index.d.ts",
-      "../node_modules/@types/jquery/index.d.ts",
-      [
-        "../node_modules/@types/bootstrap/index.d.ts",
-        [
-          {
-            "file": "../node_modules/@types/bootstrap/index.d.ts",
-            "start": 398,
-            "length": 11,
-            "messageText": "Cannot find module 'popper.js'.",
-            "category": 1,
-            "code": 2307
           }
         ]
       ],
@@ -388,6 +356,38 @@
                 }
               ]
             }
+          }
+        ]
+      ],
+      "../node_modules/@types/jquery/jquerystatic.d.ts",
+      "../node_modules/@types/jquery/jquery.d.ts",
+      "../node_modules/@types/jquery/misc.d.ts",
+      "../node_modules/@types/jquery/legacy.d.ts",
+      "../node_modules/@types/sizzle/index.d.ts",
+      "../node_modules/@types/jquery/index.d.ts",
+      [
+        "../node_modules/@types/bootstrap/index.d.ts",
+        [
+          {
+            "file": "../node_modules/@types/bootstrap/index.d.ts",
+            "start": 398,
+            "length": 11,
+            "messageText": "Cannot find module 'popper.js'.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ],
+      [
+        "./tracklistgenerator.ts",
+        [
+          {
+            "file": "./tracklistgenerator.ts",
+            "start": 951,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'includes' does not exist on type 'string[]'."
           }
         ]
       ]
