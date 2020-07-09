@@ -212,6 +212,7 @@ $(".btnLoadExtracted").bind("click", async () => {
 	//enable buttons
 	$(".btnAdd").removeAttr("disabled")
 	$(".btnUpdate").removeAttr("disabled")
+	$("#navbarSort").removeAttr("disabled")
 	$(".btnLoadExtracted").removeClass("btn-primary")
 	$(".btnLoadExtracted").addClass("btn-secondary")
 
@@ -351,6 +352,77 @@ $("#inputSearch").bind("keyup", async ev => {
 
 $(".btnTrackGen").bind("click", ev => {
 	new TrackListGenerator(<HTMLDivElement>$("#modalScript").get(0))
+})
+
+$(".btnSortName").bind("click", () => {
+	tracks.sort((a, b) => {
+		let idA = a.getElementsByTagName("MixName")[0].innerHTML
+		let idB = b.getElementsByTagName("MixName")[0].innerHTML
+
+		let stringA = idA
+		let stringB = idB
+
+		trackObjs.forEach(elm => {
+			if (elm.id === idA) stringA = elm.value.toUpperCase()
+			if (elm.id === idB) stringB = elm.value.toUpperCase()
+		})
+
+		if (stringA < stringB) return -1
+		else if (stringA > stringB) return 1
+		return 0
+	})
+	updateList()
+})
+
+$(".btnSortArtist").bind("click", () => {
+	tracks.sort((a, b) => {
+		let idA = a.getElementsByTagName("MixArtist")[0].innerHTML
+		let idB = b.getElementsByTagName("MixArtist")[0].innerHTML
+
+		let stringA = idA
+		let stringB = idB
+
+		trackObjs.forEach(elm => {
+			if (elm.id === idA) stringA = elm.value.toUpperCase()
+			if (elm.id === idB) stringB = elm.value.toUpperCase()
+		})
+
+		if (stringA < stringB) return -1
+		else if (stringA > stringB) return 1
+		return 0
+	})
+	updateList()
+})
+
+$(".btnSortComplexity").bind("click", () => {
+	tracks.sort((a, b) => {
+		let trackA = Number(a.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+		let trackB = Number(b.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+
+		let tapA = Number(a.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+		let tapB = Number(b.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+
+		let crossA = Number(a.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+		let crossB = Number(b.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+
+		let scratchA = Number(a.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+		let scratchB = Number(b.getElementsByTagName("TrackComplexity")[0]?.innerHTML)
+
+		console.log(trackA)
+
+		if (trackA === trackB) {
+			if (tapA === tapB) {
+				if (crossA === crossB) {
+					if (scratchA === scratchB) return 0
+					else return scratchA - scratchB
+				}
+				return crossA - crossB
+			}
+			return tapA - tapB
+		}
+		return trackA - trackB
+	})
+	updateList()
 })
 
 $(document).bind("keyup", ev => {

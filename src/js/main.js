@@ -192,6 +192,7 @@ $(".btnLoadExtracted").bind("click", () => __awaiter(void 0, void 0, void 0, fun
     //enable buttons
     $(".btnAdd").removeAttr("disabled");
     $(".btnUpdate").removeAttr("disabled");
+    $("#navbarSort").removeAttr("disabled");
     $(".btnLoadExtracted").removeClass("btn-primary");
     $(".btnLoadExtracted").addClass("btn-secondary");
     modified = true;
@@ -314,6 +315,74 @@ $("#inputSearch").bind("keyup", (ev) => __awaiter(void 0, void 0, void 0, functi
 }));
 $(".btnTrackGen").bind("click", ev => {
     new TrackListGenerator($("#modalScript").get(0));
+});
+$(".btnSortName").bind("click", () => {
+    tracks.sort((a, b) => {
+        let idA = a.getElementsByTagName("MixName")[0].innerHTML;
+        let idB = b.getElementsByTagName("MixName")[0].innerHTML;
+        let stringA = idA;
+        let stringB = idB;
+        trackObjs.forEach(elm => {
+            if (elm.id === idA)
+                stringA = elm.value.toUpperCase();
+            if (elm.id === idB)
+                stringB = elm.value.toUpperCase();
+        });
+        if (stringA < stringB)
+            return -1;
+        else if (stringA > stringB)
+            return 1;
+        return 0;
+    });
+    updateList();
+});
+$(".btnSortArtist").bind("click", () => {
+    tracks.sort((a, b) => {
+        let idA = a.getElementsByTagName("MixArtist")[0].innerHTML;
+        let idB = b.getElementsByTagName("MixArtist")[0].innerHTML;
+        let stringA = idA;
+        let stringB = idB;
+        trackObjs.forEach(elm => {
+            if (elm.id === idA)
+                stringA = elm.value.toUpperCase();
+            if (elm.id === idB)
+                stringB = elm.value.toUpperCase();
+        });
+        if (stringA < stringB)
+            return -1;
+        else if (stringA > stringB)
+            return 1;
+        return 0;
+    });
+    updateList();
+});
+$(".btnSortComplexity").bind("click", () => {
+    tracks.sort((a, b) => {
+        var _a, _b, _c, _d, _e, _f, _g, _h;
+        let trackA = Number((_a = a.getElementsByTagName("TrackComplexity")[0]) === null || _a === void 0 ? void 0 : _a.innerHTML);
+        let trackB = Number((_b = b.getElementsByTagName("TrackComplexity")[0]) === null || _b === void 0 ? void 0 : _b.innerHTML);
+        let tapA = Number((_c = a.getElementsByTagName("TrackComplexity")[0]) === null || _c === void 0 ? void 0 : _c.innerHTML);
+        let tapB = Number((_d = b.getElementsByTagName("TrackComplexity")[0]) === null || _d === void 0 ? void 0 : _d.innerHTML);
+        let crossA = Number((_e = a.getElementsByTagName("TrackComplexity")[0]) === null || _e === void 0 ? void 0 : _e.innerHTML);
+        let crossB = Number((_f = b.getElementsByTagName("TrackComplexity")[0]) === null || _f === void 0 ? void 0 : _f.innerHTML);
+        let scratchA = Number((_g = a.getElementsByTagName("TrackComplexity")[0]) === null || _g === void 0 ? void 0 : _g.innerHTML);
+        let scratchB = Number((_h = b.getElementsByTagName("TrackComplexity")[0]) === null || _h === void 0 ? void 0 : _h.innerHTML);
+        console.log(trackA);
+        if (trackA === trackB) {
+            if (tapA === tapB) {
+                if (crossA === crossB) {
+                    if (scratchA === scratchB)
+                        return 0;
+                    else
+                        return scratchA - scratchB;
+                }
+                return crossA - crossB;
+            }
+            return tapA - tapB;
+        }
+        return trackA - trackB;
+    });
+    updateList();
 });
 $(document).bind("keyup", ev => {
     if (ev.code === "Delete" && tbodyTracklisting.childElementCount > 0 && !modalVisible) {

@@ -2,112 +2,139 @@
   "program": {
     "fileInfos": {
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": {
-        "version": "c180f01a2aaac7d733001fa1db20f881dc83cf33096b674a1546ca26762e69da",
-        "signature": "c180f01a2aaac7d733001fa1db20f881dc83cf33096b674a1546ca26762e69da"
+        "version": "721cec59c3fef87aaf480047d821fb758b3ec9482c4129a54631e6e25e432a31",
+        "signature": "721cec59c3fef87aaf480047d821fb758b3ec9482c4129a54631e6e25e432a31",
+        "affectsGlobalScope": false
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
-        "version": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7",
-        "signature": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7"
+        "version": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "signature": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
-        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
-        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
-        "version": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed",
-        "signature": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed"
+        "version": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "signature": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
-        "version": "8329c3401aa8708426c7760f14219170f69a2cb77e4519758cec6f5027270faf",
-        "signature": "8329c3401aa8708426c7760f14219170f69a2cb77e4519758cec6f5027270faf"
+        "version": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
+        "signature": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
-        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
-        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+        "version": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "signature": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
-        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
-        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+        "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
-        "version": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6",
-        "signature": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6"
+        "version": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "signature": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
-        "version": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8",
-        "signature": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8"
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
-        "version": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122",
-        "signature": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122"
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
-        "version": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210",
-        "signature": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210"
+        "version": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "signature": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
-        "version": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca",
-        "signature": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca"
+        "version": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "signature": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
-        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
-        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+        "version": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "signature": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
-        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
-        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
-        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
-        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
       },
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
-        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
-        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+        "version": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "signature": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "affectsGlobalScope": true
       },
       "./scriptbase.ts": {
         "version": "c93bfae0a4cfcf6d2621c6dd24ab55e54242f09c5bfae56378385d83436a7ca3",
-        "signature": "3a5bdc3c488f423df08be69ae92a98e9cca2b82a379ef8e1198074fe95e516fa"
+        "signature": "3a5bdc3c488f423df08be69ae92a98e9cca2b82a379ef8e1198074fe95e516fa",
+        "affectsGlobalScope": false
       },
       "./checkapi.ts": {
         "version": "4af325829760f396da9bca9f8a78bb9a4d14f4840355faa8a69c3a4f375292fc",
-        "signature": "44b4237464ab42e0d4a86ce422e9d4f25504060ba783679ce686796895165cf0"
+        "signature": "44b4237464ab42e0d4a86ce422e9d4f25504060ba783679ce686796895165cf0",
+        "affectsGlobalScope": false
       },
       "./tracklistgenerator.ts": {
         "version": "7b7e7719597b99db0fd3a4d15e4a8111a684c3f39ef58a55de890df066b7e7e4",
-        "signature": "9587363ccf594c994af627181575d3d677a898f2ec51a321573e744c030c4985"
+        "signature": "9587363ccf594c994af627181575d3d677a898f2ec51a321573e744c030c4985",
+        "affectsGlobalScope": false
       },
       "./main.ts": {
-        "version": "620a78b7b73e28efe84528db87597dc7592f9a653653ec0961f564331a3ccc61",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+        "version": "a967f3a78d9ed4a6d9168fefc5d4adf16212132c8fe9eec7d68562f6dae6ee47",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
       },
       "../node_modules/@types/jquery/jquerystatic.d.ts": {
         "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
-        "signature": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c"
+        "signature": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
+        "affectsGlobalScope": true
       },
       "../node_modules/@types/jquery/jquery.d.ts": {
-        "version": "3ea0e1446b84ad60e76c41d5ab06d923b929043f885e28321520ed18aa70cddb",
-        "signature": "3ea0e1446b84ad60e76c41d5ab06d923b929043f885e28321520ed18aa70cddb"
+        "version": "c7e41611fca9dda55b40fdaabc0a2cb3b254517a8040515dcd7cb2bef67a065f",
+        "signature": "c7e41611fca9dda55b40fdaabc0a2cb3b254517a8040515dcd7cb2bef67a065f",
+        "affectsGlobalScope": true
       },
       "../node_modules/@types/jquery/misc.d.ts": {
         "version": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc",
-        "signature": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc"
+        "signature": "b3907b2c4c8ccd6100c20a4691a9509df2867e5346154358eab40f8e037271bc",
+        "affectsGlobalScope": true
       },
       "../node_modules/@types/jquery/legacy.d.ts": {
         "version": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
-        "signature": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc"
+        "signature": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
+        "affectsGlobalScope": true
       },
       "../node_modules/@types/sizzle/index.d.ts": {
         "version": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
-        "signature": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876"
+        "signature": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
+        "affectsGlobalScope": false
       },
       "../node_modules/@types/jquery/index.d.ts": {
-        "version": "2f7f24e566d3029aa802876b4452ae7d8a4ae21a44cefe4767c3986e06b69fc4",
-        "signature": "2f7f24e566d3029aa802876b4452ae7d8a4ae21a44cefe4767c3986e06b69fc4"
+        "version": "83b41c4e728a2ebc360331cb09a235edf7fb3525ccabe8434ee0d9b61d4f4783",
+        "signature": "83b41c4e728a2ebc360331cb09a235edf7fb3525ccabe8434ee0d9b61d4f4783",
+        "affectsGlobalScope": false
       },
       "../node_modules/@types/bootstrap/index.d.ts": {
         "version": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680",
-        "signature": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680"
+        "signature": "20226efa5db5ffbfee0b5fec6ddabccf65af17f96baf68f7a3f741a14f0d2680",
+        "affectsGlobalScope": true
       }
     },
     "options": {
@@ -123,55 +150,51 @@
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
-      "./checkapi.ts": [
-        "./scriptbase.ts"
+      "../node_modules/@types/bootstrap/index.d.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
       ],
-      "./tracklistgenerator.ts": [
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ],
+      "./checkapi.ts": [
         "./scriptbase.ts"
       ],
       "./main.ts": [
         "./checkapi.ts",
         "./tracklistgenerator.ts"
       ],
-      "../node_modules/@types/jquery/index.d.ts": [
-        "../node_modules/@types/jquery/jquerystatic.d.ts",
-        "../node_modules/@types/jquery/jquery.d.ts",
-        "../node_modules/@types/jquery/misc.d.ts",
-        "../node_modules/@types/jquery/legacy.d.ts",
-        "../node_modules/@types/sizzle/index.d.ts"
-      ],
-      "../node_modules/@types/bootstrap/index.d.ts": [
-        "../node_modules/@types/jquery/index.d.ts"
+      "./tracklistgenerator.ts": [
+        "./scriptbase.ts"
       ]
     },
     "exportedModulesMap": {
+      "../node_modules/@types/bootstrap/index.d.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
+      ],
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ],
       "./checkapi.ts": [
         "./scriptbase.ts"
       ],
       "./tracklistgenerator.ts": [
         "./scriptbase.ts"
-      ],
-      "../node_modules/@types/jquery/index.d.ts": [
-        "../node_modules/@types/jquery/jquerystatic.d.ts",
-        "../node_modules/@types/jquery/jquery.d.ts",
-        "../node_modules/@types/jquery/misc.d.ts",
-        "../node_modules/@types/jquery/legacy.d.ts",
-        "../node_modules/@types/sizzle/index.d.ts"
-      ],
-      "../node_modules/@types/bootstrap/index.d.ts": [
-        "../node_modules/@types/jquery/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts",
-      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
-      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts",
-      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
-      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
@@ -179,7 +202,29 @@
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
       "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-      "./scriptbase.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      [
+        "../node_modules/@types/bootstrap/index.d.ts",
+        [
+          {
+            "file": "../node_modules/@types/bootstrap/index.d.ts",
+            "start": 398,
+            "length": 11,
+            "messageText": "Cannot find module 'popper.js' or its corresponding type declarations.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ],
+      "../node_modules/@types/jquery/index.d.ts",
+      "../node_modules/@types/jquery/jquery.d.ts",
+      "../node_modules/@types/jquery/jquerystatic.d.ts",
+      "../node_modules/@types/jquery/legacy.d.ts",
+      "../node_modules/@types/jquery/misc.d.ts",
+      "../node_modules/@types/sizzle/index.d.ts",
       [
         "./checkapi.ts",
         [
@@ -284,7 +329,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 6573,
+            "start": 6615,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -292,7 +337,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 8450,
+            "start": 8492,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -300,7 +345,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 8550,
+            "start": 8592,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -308,7 +353,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 9799,
+            "start": 9841,
             "length": 16,
             "messageText": "Object is possibly 'undefined'.",
             "category": 1,
@@ -316,7 +361,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 9923,
+            "start": 9965,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -324,7 +369,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10027,
+            "start": 10069,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -332,7 +377,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10336,
+            "start": 12416,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -340,7 +385,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10450,
+            "start": 12530,
             "length": 46,
             "code": 2345,
             "category": 1,
@@ -359,25 +404,7 @@
           }
         ]
       ],
-      "../node_modules/@types/jquery/jquerystatic.d.ts",
-      "../node_modules/@types/jquery/jquery.d.ts",
-      "../node_modules/@types/jquery/misc.d.ts",
-      "../node_modules/@types/jquery/legacy.d.ts",
-      "../node_modules/@types/sizzle/index.d.ts",
-      "../node_modules/@types/jquery/index.d.ts",
-      [
-        "../node_modules/@types/bootstrap/index.d.ts",
-        [
-          {
-            "file": "../node_modules/@types/bootstrap/index.d.ts",
-            "start": 398,
-            "length": 11,
-            "messageText": "Cannot find module 'popper.js'.",
-            "category": 1,
-            "code": 2307
-          }
-        ]
-      ],
+      "./scriptbase.ts",
       [
         "./tracklistgenerator.ts",
         [
@@ -393,5 +420,5 @@
       ]
     ]
   },
-  "version": "3.8.3"
+  "version": "3.9.6"
 }

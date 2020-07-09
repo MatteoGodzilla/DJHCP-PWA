@@ -34,10 +34,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          <button class="nav-link btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Files
-          </a>
+          </button>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <button class="btnLoadExtracted  dropdown-item">Load Extracted files</button>
             <button class="btnAdd  dropdown-item" disabled>Add Custom</button>
@@ -45,11 +45,22 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button class="nav-link btn dropdown-toggle" id="navbarSort" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" disabled>
+            Sort
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarSort">
+            <button class="btnSortName dropdown-item"> Sort By Names</button>
+            <button class="btnSortArtist dropdown-item"> Sort By Artist</button>
+            <button class="btnSortComplexity dropdown-item"> Sort By Complexity</button>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link btn dropdown-toggle" id="navbarScripts" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Scripts
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarScripts">
             <button class="btnTrackGen dropdown-item"> Tracklist Generator</button>
           </div>
         </li>
@@ -132,9 +143,7 @@
     </div>
   </div>
 
-
   <script type="module" src="./src/js/main.js"></script>
-
 </body>
 
 </html>
