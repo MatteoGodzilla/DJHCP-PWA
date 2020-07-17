@@ -9,11 +9,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import CheckAPI from "./CheckAPI.js";
 import TrackListGenerator from "./TrackListGenerator.js";
+import ShowAdded from "./ShowAdded.js";
 let divTracklisting = $("#divTracklisting").get(0);
 let tbodyTracklisting = $("#tableTracklisting").get(0);
 let tracks = [];
 let visible = [];
 let trackObjs = [];
+let added = [];
 let selectedIndex = 0;
 let baseFolderHandle;
 let modified = false;
@@ -251,6 +253,7 @@ $(".btnAdd").bind("click", (ev) => __awaiter(void 0, void 0, void 0, function* (
         }
         if (!present) {
             tracks.push(newTrack);
+            added.push(id);
         }
         else {
             console.error("TRACKLISTING ERROR: a track with id", id, "is already present. Skipping");
@@ -291,6 +294,7 @@ $(".btnUpdate").bind("click", (ev) => __awaiter(void 0, void 0, void 0, function
         yield trackStream.close();
         modified = false;
         hideLoading();
+        new ShowAdded($("#modalScript").get(0), added);
     }
 }));
 $("#inputSearch").bind("keyup", (ev) => __awaiter(void 0, void 0, void 0, function* () {
@@ -315,6 +319,9 @@ $("#inputSearch").bind("keyup", (ev) => __awaiter(void 0, void 0, void 0, functi
 }));
 $(".btnTrackGen").bind("click", ev => {
     new TrackListGenerator($("#modalScript").get(0));
+});
+$(".btnShowAdded").bind("click", ev => {
+    new ShowAdded($("#modalScript").get(0), added);
 });
 $(".btnSortName").bind("click", () => {
     tracks.sort((a, b) => {

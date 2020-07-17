@@ -1,11 +1,13 @@
 import CheckAPI from "./CheckAPI.js";
 import TrackListGenerator from "./TrackListGenerator.js";
+import ShowAdded from "./ShowAdded.js";
 
 let divTracklisting = $("#divTracklisting").get(0)
 let tbodyTracklisting = $("#tableTracklisting").get(0)
 let tracks: Element[] = []
 let visible: Element[] = []
 let trackObjs: strObj[] = []
+let added:string[] = []
 let selectedIndex = 0
 let baseFolderHandle
 let modified = false
@@ -282,6 +284,7 @@ $(".btnAdd").bind("click", async ev => {
 		}
 		if (!present) {
 			tracks.push(newTrack)
+			added.push(id)
 		} else {
 			console.error("TRACKLISTING ERROR: a track with id", id, "is already present. Skipping")
 		}
@@ -327,6 +330,8 @@ $(".btnUpdate").bind("click", async ev => {
 		modified = false
 
 		hideLoading()
+
+		new ShowAdded(<HTMLDivElement>$("#modalScript").get(0),added)
 	}
 })
 
@@ -352,6 +357,10 @@ $("#inputSearch").bind("keyup", async ev => {
 
 $(".btnTrackGen").bind("click", ev => {
 	new TrackListGenerator(<HTMLDivElement>$("#modalScript").get(0))
+})
+
+$(".btnShowAdded").bind("click", ev => {
+	new ShowAdded(<HTMLDivElement>$("#modalScript").get(0),added)
 })
 
 $(".btnSortName").bind("click", () => {

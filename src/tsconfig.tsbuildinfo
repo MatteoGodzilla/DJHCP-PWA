@@ -91,13 +91,18 @@
         "signature": "44b4237464ab42e0d4a86ce422e9d4f25504060ba783679ce686796895165cf0",
         "affectsGlobalScope": false
       },
+      "./showadded.ts": {
+        "version": "966fc6177c4480fca6eec3baa1063e4aa57048f6a299259602ec251ba345241a",
+        "signature": "f367f3e0222ffedd581a7820f6ff076e2d08385be0d07750572684f7a7debd84",
+        "affectsGlobalScope": false
+      },
       "./tracklistgenerator.ts": {
         "version": "7b7e7719597b99db0fd3a4d15e4a8111a684c3f39ef58a55de890df066b7e7e4",
         "signature": "9587363ccf594c994af627181575d3d677a898f2ec51a321573e744c030c4985",
         "affectsGlobalScope": false
       },
       "./main.ts": {
-        "version": "a967f3a78d9ed4a6d9168fefc5d4adf16212132c8fe9eec7d68562f6dae6ee47",
+        "version": "749a48e039770dfa232b357d49fd9f0789f59dd9437453aea2bd8be43ba9348a",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
@@ -165,7 +170,11 @@
       ],
       "./main.ts": [
         "./checkapi.ts",
+        "./showadded.ts",
         "./tracklistgenerator.ts"
+      ],
+      "./showadded.ts": [
+        "./scriptbase.ts"
       ],
       "./tracklistgenerator.ts": [
         "./scriptbase.ts"
@@ -183,6 +192,9 @@
         "../node_modules/@types/sizzle/index.d.ts"
       ],
       "./checkapi.ts": [
+        "./scriptbase.ts"
+      ],
+      "./showadded.ts": [
         "./scriptbase.ts"
       ],
       "./tracklistgenerator.ts": [
@@ -243,7 +255,7 @@
         [
           {
             "file": "./main.ts",
-            "start": 322,
+            "start": 388,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has type 'any' in some locations where its type cannot be determined.",
             "category": 1,
@@ -251,7 +263,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1502,
+            "start": 1568,
             "length": 16,
             "messageText": "Object is possibly 'null'.",
             "category": 1,
@@ -259,7 +271,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1519,
+            "start": 1585,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -267,7 +279,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1654,
+            "start": 1720,
             "length": 25,
             "code": 2345,
             "category": 1,
@@ -286,7 +298,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1834,
+            "start": 1900,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -294,7 +306,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 1925,
+            "start": 1991,
             "length": 8,
             "code": 2339,
             "category": 1,
@@ -302,7 +314,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 3793,
+            "start": 3859,
             "length": 2,
             "code": 2345,
             "category": 1,
@@ -321,7 +333,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 5092,
+            "start": 5158,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -329,7 +341,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 6615,
+            "start": 6681,
             "length": 23,
             "code": 2339,
             "category": 1,
@@ -337,7 +349,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 8492,
+            "start": 8577,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -345,7 +357,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 8592,
+            "start": 8677,
             "length": 16,
             "messageText": "Variable 'baseFolderHandle' implicitly has an 'any' type.",
             "category": 1,
@@ -353,7 +365,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 9841,
+            "start": 9993,
             "length": 16,
             "messageText": "Object is possibly 'undefined'.",
             "category": 1,
@@ -361,7 +373,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 9965,
+            "start": 10117,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -369,7 +381,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 10069,
+            "start": 10221,
             "length": 5,
             "code": 2339,
             "category": 1,
@@ -377,7 +389,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 12416,
+            "start": 12680,
             "length": 4,
             "code": 2339,
             "category": 1,
@@ -385,7 +397,7 @@
           },
           {
             "file": "./main.ts",
-            "start": 12530,
+            "start": 12794,
             "length": 46,
             "code": 2345,
             "category": 1,
@@ -405,6 +417,7 @@
         ]
       ],
       "./scriptbase.ts",
+      "./showadded.ts",
       [
         "./tracklistgenerator.ts",
         [
